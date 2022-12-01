@@ -17,7 +17,16 @@ body {
     display: grid;
     grid-template-columns: 1fr 2.5fr 1fr;
     grid-template-rows: 1fr 6fr 0.6fr;
+    background: url("./background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
+
+img {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+  }
 
 /* HEADER ELEMENTS */
 
@@ -61,4 +70,19 @@ body {
     margin: 0;
     grid-area: 3/1/4/4;
     background-color: #2B3A55;
+    display: grid;
+    grid-template-columns: 1fr 2.5fr 1fr;
+}
+
+#footer-container {
+    grid-column: 2/3;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+#footer a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
 }

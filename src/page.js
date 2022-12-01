@@ -1,4 +1,6 @@
-function pageLoad() {
+import { aboutLoad } from "./about";
+
+function pageLoad(aboutLoad) {
   const pageContainer = document.createElement("div");
   pageContainer.id = "page-container";
 
@@ -30,11 +32,24 @@ function pageLoad() {
 
   const mainContent = document.createElement("div");
   mainContent.id = "main-content";
+  //mainContent.appendChild(aboutLoad(mainContent));
+  //console.log(aboutLoad());
 
   // Footer content
 
   const footer = document.createElement("div");
   footer.id = "footer";
+  const footerContainer = document.createElement("div");
+  footerContainer.id = "footer-container";
+  const credit = document.createElement("a");
+  credit.href = "https://www.pexels.com/@evonics/";
+  credit.textContent = "Background image copyright Marcus Herzberg";
+  const copyright = document.createElement("a");
+  copyright.href = "https://github.com/bryn-ellison";
+  copyright.textContent = `Copyright ${new Date().getFullYear()} Bryn Ellison`;
+  footerContainer.appendChild(credit);
+  footerContainer.appendChild(copyright);
+  footer.appendChild(footerContainer);
 
   // Append page elements to container
 
