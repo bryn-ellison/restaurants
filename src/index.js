@@ -1,11 +1,6 @@
+import { pageLoad } from "./page";
 import "./style.css";
 
-function home() {
-  const test = document.createElement("div");
-  test.textContent = "HELLO WORLD";
-  test.id = "test-div";
+const content = document.querySelector("#content");
 
-  return test;
-}
-
-document.body.appendChild(home());
+content.appendChild(pageLoad());
