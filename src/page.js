@@ -1,9 +1,6 @@
-import { aboutLoad } from "./about";
+import { menuClick } from "./index";
 
-function pageLoad() {
-  const pageContainer = document.createElement("div");
-  pageContainer.id = "page-container";
-
+function headerLoad() {
   // Header content
 
   const header = document.createElement("div");
@@ -16,25 +13,41 @@ function pageLoad() {
   const aboutBtn = document.createElement("button");
   aboutBtn.classList = "menu-button";
   aboutBtn.textContent = "ABOUT";
+  aboutBtn.addEventListener("click", () => {
+    menuClick("about");
+  });
   const contactBtn = document.createElement("button");
   contactBtn.classList = "menu-button";
   contactBtn.textContent = "CONTACT";
+  contactBtn.addEventListener("click", () => {
+    menuClick("contact");
+  });
   const menuBtn = document.createElement("button");
   menuBtn.classList = "menu-button";
   menuBtn.textContent = "MENU";
+  menuBtn.addEventListener("click", () => {
+    menuClick("menu");
+  });
   header.appendChild(logoMenuContainer);
   logoMenuContainer.appendChild(logo);
   logoMenuContainer.appendChild(aboutBtn);
   logoMenuContainer.appendChild(contactBtn);
   logoMenuContainer.appendChild(menuBtn);
 
+  return header;
+}
+
+function mainLoad(currentTabContent) {
   // Main content
 
   const mainContent = document.createElement("div");
   mainContent.id = "main-content";
-  mainContent.appendChild(aboutLoad(mainContent));
-  //console.log(aboutLoad());
+  mainContent.appendChild(currentTabContent(mainContent));
 
+  return mainContent;
+}
+
+function footerLoad() {
   // Footer content
 
   const footer = document.createElement("div");
@@ -51,15 +64,8 @@ function pageLoad() {
   footerContainer.appendChild(copyright);
   footer.appendChild(footerContainer);
 
-  // Append page elements to container
-
-  pageContainer.appendChild(header);
-
-  pageContainer.appendChild(mainContent);
-
-  pageContainer.appendChild(footer);
-
-  return pageContainer;
+  return footer;
 }
+// Append page elements to container
 
-export { pageLoad };
+export { headerLoad, mainLoad, footerLoad };

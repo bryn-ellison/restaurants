@@ -23,7 +23,7 @@ function menuLoad() {
   upperLeftContent.classList = "grid-content";
   const upperLeftTitle = document.createElement("h3");
   upperLeftTitle.classList = "grid-content-title";
-  upperLeftTitle.textContent = "Welcome";
+  upperLeftTitle.textContent = "Small Plates";
   const upperLeftText = document.createElement("p");
   upperLeftText.classList = "grid-content-text";
   upperLeftText.textContent = `Welcome to Flood Restaurant & Bar, where a good welcome is as important as good food and better drink. We offer small and large plates, fine cocktails and our own special in-house grime band.`;
@@ -42,7 +42,7 @@ function menuLoad() {
   lowerLeftContent.classList = "grid-content";
   const lowerLeftTitle = document.createElement("h3");
   lowerLeftTitle.classList = "grid-content-title";
-  lowerLeftTitle.textContent = "Opening hours";
+  lowerLeftTitle.textContent = "Large Plates";
   const lowerLeftText = document.createElement("p");
   lowerLeftText.classList = "grid-content-text";
   lowerLeftText.textContent = `Welcome to Flood Restaurant & Bar, where a good welcome is as important as good food and better drink. We offer small and large plates, fine cocktails and our own special in-house grime band.`;
@@ -57,7 +57,7 @@ function menuLoad() {
 
   const lowerRightTitle = document.createElement("h3");
   lowerRightTitle.classList = "grid-content-title";
-  lowerRightTitle.textContent = "Comments";
+  lowerRightTitle.textContent = "Drinks";
   const lowerRightText = document.createElement("p");
   lowerRightText.classList = "grid-content-text";
   lowerRightText.textContent = `Welcome to Flood Restaurant & Bar, where a good welcome is as important as good food and better drink. We offer small and large plates, fine cocktails and our own special in-house grime band.`;

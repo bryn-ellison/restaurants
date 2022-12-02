@@ -23,7 +23,7 @@ function contactLoad() {
   upperLeftContent.classList = "grid-content";
   const upperLeftTitle = document.createElement("h3");
   upperLeftTitle.classList = "grid-content-title";
-  upperLeftTitle.textContent = "Welcome";
+  upperLeftTitle.textContent = "Get in touch";
   const upperLeftText = document.createElement("p");
   upperLeftText.classList = "grid-content-text";
   upperLeftText.textContent = `Welcome to Flood Restaurant & Bar, where a good welcome is as important as good food and better drink. We offer small and large plates, fine cocktails and our own special in-house grime band.`;
@@ -34,7 +34,7 @@ function contactLoad() {
   // Grid image content
 
   const image = document.createElement("img");
-  image.id = "about-image";
+  image.id = "contact-image";
 
   // Lower left grid content
 
