@@ -13,6 +13,7 @@ function headerLoad() {
   const aboutBtn = document.createElement("button");
   aboutBtn.classList = "menu-button";
   aboutBtn.textContent = "ABOUT";
+  aboutBtn.autofocus;
   aboutBtn.addEventListener("click", () => {
     menuClick("about");
   });
@@ -56,7 +57,7 @@ function footerLoad() {
   footerContainer.id = "footer-container";
   const credit = document.createElement("a");
   credit.href = "https://www.pexels.com/@evonics/";
-  credit.textContent = "Background image copyright Marcus Herzberg";
+  credit.textContent = "Images copyright Marcus Herzberg";
   const copyright = document.createElement("a");
   copyright.href = "https://github.com/bryn-ellison";
   copyright.textContent = `Copyright © ${new Date().getFullYear()} Bryn Ellison`;
