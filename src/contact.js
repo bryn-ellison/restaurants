@@ -1,6 +1,4 @@
-// import aboutImage from "./about.jpg";
-
-function aboutLoad() {
+function contactLoad() {
   const contentContainer = document.createElement("div");
   contentContainer.classList = "main-content-container";
 
@@ -10,7 +8,7 @@ function aboutLoad() {
   titleContainer.classList = "title-container";
   const title = document.createElement("h2");
   title.classList = "content-title";
-  title.textContent = "About";
+  title.textContent = "Contact";
 
   titleContainer.appendChild(title);
 
@@ -83,4 +81,4 @@ function aboutLoad() {
   return contentContainer;
 }
 
-export { aboutLoad };
+export { contactLoad };

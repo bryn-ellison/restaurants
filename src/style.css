@@ -16,17 +16,12 @@ body {
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 2.5fr 1fr;
-    grid-template-rows: 1fr 6fr 0.6fr;
+    grid-template-rows: 0.8fr 6fr 0.6fr;
     background: url("./background.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
 }
-
-img {
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
-  }
 
 /* HEADER ELEMENTS */
 
@@ -62,6 +57,71 @@ img {
 #main-content {
     margin: 0;
     grid-area: 2/2/3/3;
+    background:rgba(255,255,255, 0.5);
+}
+
+.main-content-container {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;  
+}
+
+.content-title {
+    font-size: 2.5rem;
+    color: #CE7777;
+    border: 15px solid #CE7777;
+    width: fit-content;
+    padding: 1rem;
+    background-color: #2B3A55;
+}
+
+#about-image {
+    border: 15px solid #CE7777;
+    background: url("./about.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    width: 95%;
+}
+
+#contact-image {
+    border: 15px solid #CE7777;
+    background: url("./about.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    width: 95%;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.grid-content {
+    border: 15px solid #CE7777;
+    background-color: #2B3A55;
+}
+
+.grid-content-title {
+    color: #CE7777;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.grid-content-text {
+    color: #CE7777;
+    padding: 1rem;
+    font-size: 1.2rem;
 }
 
 /* FOOTER ELEMENTS */
@@ -69,7 +129,7 @@ img {
 #footer {
     margin: 0;
     grid-area: 3/1/4/4;
-    background-color: #2B3A55;
+    background-color: #CE7777;
     display: grid;
     grid-template-columns: 1fr 2.5fr 1fr;
 }
@@ -82,7 +142,7 @@ img {
 }
 
 #footer a {
-    color: white;
+    color: #2B3A55;
     text-decoration: none;
     text-align: center;
 }

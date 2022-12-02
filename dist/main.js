@@ -1,1 +1,0 @@
-document.body.appendChild(function(){const t=document.createElement("div");return t.textContent="HELLO WORLD",t.id="test-div",t}());

@@ -1,6 +1,6 @@
 import { aboutLoad } from "./about";
 
-function pageLoad(aboutLoad) {
+function pageLoad() {
   const pageContainer = document.createElement("div");
   pageContainer.id = "page-container";
 
@@ -32,7 +32,7 @@ function pageLoad(aboutLoad) {
 
   const mainContent = document.createElement("div");
   mainContent.id = "main-content";
-  //mainContent.appendChild(aboutLoad(mainContent));
+  mainContent.appendChild(aboutLoad(mainContent));
   //console.log(aboutLoad());
 
   // Footer content
@@ -46,7 +46,7 @@ function pageLoad(aboutLoad) {
   credit.textContent = "Background image copyright Marcus Herzberg";
   const copyright = document.createElement("a");
   copyright.href = "https://github.com/bryn-ellison";
-  copyright.textContent = `Copyright ${new Date().getFullYear()} Bryn Ellison`;
+  copyright.textContent = `Copyright © ${new Date().getFullYear()} Bryn Ellison`;
   footerContainer.appendChild(credit);
   footerContainer.appendChild(copyright);
   footer.appendChild(footerContainer);
